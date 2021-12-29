@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Pattaya&family=Reggae+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Montserrat+Alternates:wght@200&family=Pattaya&family=Reggae+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+#page{
+    background: linear-gradient( rgba(32, 31, 31, 0.918),rgba(31, 53, 53, 0.952)), url(./assets/images\ \(8\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;    
+    height: 100%;
+    overflow: hidden;
+    
+}
+#landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#logo{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(146, 97, 85);
+    position: relative;
+    /* text-shadow: 1px 1px rgb(41, 14, 138); */
+    margin: 1rem;
+}
+
+.profession{
+    text-align: center;
+}
+
+.name{
+    font-size: 2.3rem;
+    color: darkgoldenrod;
+    text-align: center;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+}
+.job{
+    font-size: 1.5rem;
+    color: darkcyan;
+    text-align: center;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: -2rem;
+}
+#explore,#resume{
+    font-size: 1.2rem;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 1.3rem;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#explore{
+    color: darkgoldenrod;
+    border: 2px solid darkgoldenrod;
+}
+#explore:hover{
+    color: white;
+    background: darkgoldenrod;
+}
+#explore:active{
+    color: darkgoldenrod;
+    background: none;
+    border: 2px solid darkgoldenrod;
+}
+
+#resume{
+    color: darkcyan;
+    border: 2px solid darkcyan;
+    margin-left: 2rem;
+}
+#resume:hover{
+    color: white;
+    background: darkcyan;
+}
+#resume:active{
+    color: darkgoldenrod;
+    background: none;
+    border: 2px solid darkgoldenrod;
+}
+
+#img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+    border: 3px solid white;
+    background: lightsalmon;
+}
+
+@media screen and (max-width : 800px){
+    #landing-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}

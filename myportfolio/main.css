@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Pattaya&family=Reggae+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Montserrat+Alternates:wght@200&family=Pattaya&family=Reggae+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Work+Sans:wght@300&display=swap');
+
+/* main page */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.main-page{
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    height: 100%;
+    overflow: hidden;
+}
+#menu-plate{    
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    padding:1rem 0;
+    text-align: center;
+    background: whitesmoke;
+}
+
+#profile-img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid white;
+}
+#profile-name{
+    font-size: 1.2rem;
+    color: maroon;
+    text-align: center;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: -0.5rem;
+}
+.menu{
+    text-align: center;
+}
+.menu a{
+    color: darkslategray;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    background: rgb(253, 183, 253);
+    font-family: sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.menu a:hover{
+    background: none;
+}
+#resume{
+    font-size: 1rem;
+    background: rgb(230, 67, 230);
+    outline: none;
+    border: none;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    top: 6rem;    
+}
+#resume:hover{
+    color: white;
+    background: plum;
+}
+#resume:active{
+    color: darkgoldenrod;
+    background: none;
+    border: 2px solid darkgoldenrod;
+}
+
+#social-header{   
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 1;
+    background: whitesmoke;
+    padding: 10px 0;
+}
+#content-page{
+    padding-top: 50px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100vh;    
+}
+#content-body{
+    overflow: auto;
+}
+#social-header a{
+    margin: 0 2rem;
+    position: relative;
+    left: 30%;
+    position: relative;
+}
+#social-header i.fa{
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.3rem 0.4rem;
+    font-size: 25px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.548) 0px 0px 8px;
+
+}
+#social-header .fa:hover{
+    transition: 1s all ease;
+}
+#social-header .fa-youtube-play{
+    background: red;
+}
+#social-header .fa-facebook-official{
+    background: cornflowerblue;
+}
+#social-header .fa-linkedin-square{
+    background: rgb(26, 74, 119);
+}
+#social-header .fa-github-square{
+    background: darkslategray;
+}
+
+/* content page */
+
+/* about page */
+
+#about{
+    background: whitesmoke;
+    background-attachment: fixed;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+    /* border-bottom: 10px solid white; */
+}
+
+.heading{
+    font-size: 2rem;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+    text-shadow: 1px 3px 1px darkslategray;
+    margin: 0.5rem;
+    color: goldenrod;
+}
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+}
+#abtout-body{
+    padding: 0.5rem 1rem;
+}
+#description{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(77, 104, 126);
+}
+#description-text{
+    line-height: 1.7rem;
+}
+#info{
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+#info p{
+    background: rgb(253, 230, 253);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    padding: 0.8rem 1rem;
+    border-spacing: 1rem;
+    color: rgba(43, 16, 197, 0.637);
+}
+#info b{
+    color: rgb(125, 69, 170);
+}
+
+.tech-body{
+    background: rgb(253, 230, 253);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tech{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tech img{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid rgba(250, 236, 236, 0.623);
+    border-radius: 50%;
+}
+.tech-name{
+    margin: 1rem;
+}
+.tech-name h5{
+    font-size: 1.3rem;
+    margin: 0;
+    color: rgb(86, 122, 136);
+}
+.tech-name p{
+    margin:  0.2rem 0 0 0;
+    font-size: 0.9rem;
+    color: rgb(105, 76, 67);
+}
+.radial-percent {
+    width: 4rem;
+    height: 4rem;
+    background: #c7abce;
+    border-radius: 50%;
+    position: relative;
+}
+.radial-circle .circle,
+.radial-circle .inner-circle1,.radial-circle .inner-circle2,.radial-circle .inner-circle3,.radial-circle .inner-circle4,.radial-circle .inner-circle5,.radial-circle .inner-circle6 {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.radial-circle .circle {
+    clip: rect(0px, 4rem, 4rem, 2rem);
+}
+.circle .inner-circle1,.circle .inner-circle2,.circle .inner-circle3,.circle .inner-circle4,.circle .inner-circle5,.circle .inner-circle6 {
+    clip: rect(0px, 2rem, 4rem, 0px);
+    background-color: #9f00b18c;
+}
+.radial-circle .circle.full1,
+.radial-circle .inner-circle1{
+animation: fill1 ease-in-out 3s;
+transform: rotate(153deg);
+}
+@keyframes fill1 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(153deg);
+}
+}
+
+.radial-circle .circle.full2,
+.radial-circle .inner-circle2{
+animation: fill1 ease-in-out 3s;
+transform: rotate(144deg);
+}
+
+@keyframes fill1 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(144deg);
+}
+}
+
+.radial-circle .circle.full3,
+.radial-circle .inner-circle3{
+animation: fill1 ease-in-out 3s;
+transform: rotate(126deg);
+}
+@keyframes fill1 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(126deg);
+}
+}
+
+.radial-circle .circle.full4,
+.radial-circle .inner-circle4{
+animation: fill1 ease-in-out 3s;
+transform: rotate(135deg);
+}
+@keyframes fill1 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(135deg);
+}
+}
+
+.radial-circle .circle.full5,
+.radial-circle .inner-circle5{
+animation: fill1 ease-in-out 3s;
+transform: rotate(99deg);
+}
+@keyframes fill1 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(99deg);
+}
+}
+
+.radial-circle .circle.full6,
+.radial-circle .inner-circle6{
+animation: fill1 ease-in-out 3s;
+transform: rotate(135deg);
+}
+
+@keyframes fill1 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(135deg);
+}
+}
+
+.radial-circle{
+    margin: auto;
+}
+.progress{
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    text-align: center;
+    background: rgb(241, 240, 241);
+    position: absolute;
+    border-radius: 50%;
+    color: darkseagreen;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+/* end of about page */
+
+/* services section */
+#services{
+    margin-top: 0rem;
+    padding: 0.5rem 2rem;
+    padding-bottom: 3rem;
+    background: whitesmoke;
+    /* border-bottom: 10px solid white; */
+}
+#services-body{
+    padding: 0.5rem 4rem;
+}
+.card-1{    
+    margin: 2rem 0;
+    text-align: center;
+}
+.card-body{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    height: 18rem;
+    overflow-y: hidden;
+    width: 15rem;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;        
+}
+#card-body-1{
+    background: linear-gradient(45deg,rgb(245, 240, 226),rgb(245, 210, 154))    
+}
+#card-body-2{
+    background: linear-gradient(45deg,rgb(246, 252, 229),rgb(189, 224, 197));    
+}
+#card-body-3{
+    background: linear-gradient(45deg,rgb(255, 248, 248),rgb(228, 190, 190));    
+}
+#card-body-4{
+    background: linear-gradient(45deg,rgb(241, 255, 255),rgb(155, 201, 204));    
+}
+#card-body-5{
+    background: linear-gradient(45deg,rgb(255, 233, 249),rgb(212, 176, 208));    
+}
+#card-body-6{
+    background: linear-gradient(45deg,rgb(242, 241, 255),rgb(189, 192, 224));    
+}
+.card-title{
+    font-size: 1.7rem;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+    color: rgb(77, 104, 126);
+    margin: 0;
+    padding: 0;
+}
+.card-img{    
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    border-radius: 50%;
+}
+.card-text{
+    font-size: 1.2rem;
+    color: olive;
+}
+/* end of services */
+
+/* project section */
+.projects{
+    padding: 1rem 2rem;
+    background: whitesmoke;
+    min-height: 100vh;
+    position: relative;
+    /* border-bottom: 10px solid white; */
+}
+.projects-body{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+.project-card{
+    display: grid;
+    height: 12rem;    
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.812) 0px 3px 16px;
+    position: relative;
+}
+.project-card:hover .project-content{
+    opacity: 1;
+    background: rgb(219, 251, 252);
+}
+.project-img{
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    transition-delay: 3s;
+}
+.project-img:hover{
+    transform: scaleY(0.8);
+}
+.project-name{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: darkolivegreen;
+}
+.project-description{
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+    color: darkcyan;
+    text-align: left;
+    margin: 0.8rem 0.5rem;
+}
+.project-content{
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s all ease-in-out;
+}
+.project-content a{
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(143, 142, 142);
+    display: inline;
+    color: rgb(1, 88, 88);
+    font-size: 0.9rem;
+    position: relative;
+    top: 0.8rem;
+}
+.project-content a:hover{
+    color: white;
+    background: rgb(1, 88, 88);
+    border: none;
+}
+/* end of project section */
+
+/* blogs section */
+.blogs{
+    padding: 1rem 0rem;
+    min-height: 100vh;
+    position: relative;
+    background: whitesmoke;
+    /* border-bottom: 10px solid white; */
+}
+.blogs-body{
+    margin: 3rem 5rem;
+}
+.blog-card{
+    display: inline-block;
+    width: 260px;
+    height: max-content;
+    margin: 0.8rem;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.blog-card-content h3{
+    color: rgb(141, 49, 49);
+    text-align: left;
+}
+.blog-card-content p{
+    color: darkcyan;
+    font-size: 14px;
+    text-align: left;
+}
+.blog-img img{
+    width: 260px;
+    height: 150px;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+.blog-card-content{
+    padding: 0.8rem 0.5rem;
+}
+.blog-name{
+    margin: 0;
+    font-size: 0.9rem;
+}
+.blog-description{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+.learn-more{
+    display: block;
+    padding: 0.4rem 0.8rem;
+    background:  cornflowerblue;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    width: max-content;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* end of blogs section */
+
+/* testimonial section */
+.testimonial{
+    min-height: 100vh;
+    background: whitesmoke;
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
+}
+.test-com{
+    text-align: center;
+    font-size: 1.8rem;
+    color: darkslategray;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+}
+.test-card{
+    padding: 0.5rem 5rem;
+    width: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.test-card-body{
+    width: 25rem;
+    margin: 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    background: linear-gradient(45deg,rgb(255, 158, 255),whitesmoke); 
+    box-shadow: rgba(87, 87, 87, 0.568) 0px 0px 12px;    
+}
+.card-header{
+    padding: 1rem;
+    text-align: center;
+}
+.test-img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.test-card-content{
+    padding: 0.5rem;
+    margin: 0rem 0.5rem;
+    overflow: hidden;    
+}
+.quote-icon{
+    color: goldenrod;
+}
+.test-name{
+    margin: 0;
+    margin-top: 0.5rem;
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.test-pro{
+    color: rgb(23, 112, 23);
+    margin-top: 0.1rem;
+    font-size: 1rem;
+}
+.test-des{
+    margin-top: 0.5rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: darkcyan;
+}
+.test-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* end of testimonial section */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: cadetblue;
+    border-radius: 5px;
+}
+
+/* mobile design */
+@media screen and (max-width : 800px) {
+    .main-page{
+        display: none;
+    }
+    html,body{
+        height: 100%;
+    }
+    .mobile-view{
+        display: grid;
+        grid-template-rows: 110px 1fr 60px;
+        height: 100%;
+        background: black;
+    }
+    .m-header{
+        padding: 0 10px;
+        background: black;
+        border-bottom: 1px solid darkslategrey;
+    }
+    #m-resume{
+        font-size: 1rem;
+        background: rgb(255, 186, 158);
+        outline: none;
+        border: none;
+        border-radius: 50%;
+        padding: 0.5rem 0.7rem;
+        color: white;    
+    }
+    .m-title p{
+        font-family: 'Pattaya', sans-serif;
+        font-size: 30px;
+        color: rgb(146, 97, 85);
+        position: relative;
+        margin: 10px 0;
+    }
+    .m-title #resume{
+        margin: 0;
+        font-size: 16px;
+        border: 1px solid goldenrod;
+        color: goldenrod;
+        margin: 0;
+    }
+    #m-social-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .m-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #m-social-header i{
+        font-size: 25px;
+        padding: 5px 7px;
+        background: white;
+        border-radius: 50%;
+    }
+    #m-social-header .fa-youtube-play{
+        color: red;
+    }
+    #m-social-header .fa-facebook-official{
+        color: rgb(73, 73, 161);
+    }
+    #m-social-header .fa-linkedin-square{
+        color: blue;
+    }
+    #m-social-header .fa-github-square{
+        border-radius: 50%;
+    }
+
+    .m-content{
+        overflow: auto;
+        background: linear-gradient(rgba(10, 10, 10, 0.815),rgb(14, 7, 7)), url('./assets/professional/professional-men.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .content-body{
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        color: white;
+        align-items: center;
+        padding: 0;
+    }
+    .timeline{
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .line1,.line2{
+        width: 2px;
+        height: 50px;
+        background: white;
+        border-radius: 5px;
+    }
+    .cir{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+    .timeline-content{
+        padding: 0 10px;
+    }
+    .skill-sets{
+        color: white;
+        padding: 1rem;
+    }
+    .skill-sets p{
+        font-size: 25px;
+        color: rgb(235, 104, 104);
+    }
+    .skills div{
+        padding: 8px 20px;
+        background: rgba(128, 128, 128, 0.3);
+        margin: 8px 16px;
+        border-radius: 16px;
+        display: inline-block;
+    }
+::-webkit-scrollbar{
+    display: none;
+}
+
+.services{
+    padding: 20px 0;
+}
+.title-header{
+    color: darkgoldenrod;
+    font-size: 30px;
+    margin: 20px 10px;
+}
+.services-item{
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+#s-item-1{
+    background: lightpink;
+}
+#s-item-2{
+    background: lightsalmon;
+}
+#s-item-3{
+    background: cornflowerblue;
+}
+#s-item-4{
+    background: lightcoral;
+}
+#s-item-5{
+    background: plum;
+}
+#s-item-6{
+    background: palegreen;
+}
+.services-item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.services-item p{
+    margin: 0;
+    font-size: 30px;
+}
+
+.m-projects{
+    margin: 10px 0;
+}
+.p-card {
+    text-align: center;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin: 15px auto;
+}
+.p-card img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.p-card p{
+    position: absolute;
+    bottom: 0;
+    margin: 5px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.p-details{
+    position: absolute;
+    right: 0;
+    margin: 15px 10px;
+}
+.p-details a{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 7px 10px;
+    color: white;
+    margin: 5px;
+    font-size: larger;
+}
+
+.m-blogs{
+    margin: 40px 0;
+}
+.blog-body{
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+}
+.m-blog-card{
+    width: 240px;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.m-blog-card img{
+    width: 240px;
+    height: 150px;
+}
+.m-blog-name{
+    margin: 10px 0;
+    color: darkgoldenrod;
+}
+
+.m-footer{
+    padding: 0 10px;
+    background: black;
+    border-top: 1px solid darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-footer .m-icon{
+    width: 30px;
+}
+.testimonial{
+    background: none;
+    padding: 0;
+    padding-bottom: 0;
+}
+.test-com{
+    text-align: center;
+    font-size: 1.2rem;
+    color: lavender;
+    font-family: 'Chela One', cursive;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Reggae One', cursive;
+}
+.test-card{
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    box-sizing: border-box;
+}
+.test-card-body{
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    background: rgba(95, 95, 95, 0.342);
+    box-shadow: none;
+    border-radius: 0;
+    grid-template-columns: none;
+}
+.test-name{
+    color: lightcoral;
+}
+.test-pro{
+    color: whitesmoke;
+}
+.test-des{
+    color: lavender;
+}
+}
